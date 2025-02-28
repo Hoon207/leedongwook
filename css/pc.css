@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*pc 해상도 서식*/
+
+ @media screen and (min-width:1025px){
+  h1> a{font-weight: bold; left:-70px; position:absolute;}
+  .gnb:hover{height:240px;}
+  .gnb > ul> li > a::after{
+    display:block;
+    content: '';
+    height:3px;
+    background: red;
+    transform:translateY(-3px) scale(0);
+    transition:0.3s;
+  }
+
+  .m_search3{display:none;}
+  .gnb > ul> li >a:hover::after{
+    transform: translateY(-3px) scale(1);
+  }
+  .sub a:hover{
+    text-decoration: underline;
+    color:white;
+  }
+ }
